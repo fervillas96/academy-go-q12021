@@ -49,7 +49,7 @@ func handleRequest() {
 	router.GET("/", homePage)
 	router.GET("/getname/:id", getPokemonByID)
 
-	log.Fatal(http.ListenAndServe(":4000", router))
+	log.Fatal(http.ListenAndServe("localhost:8080", router))
 }
 
 func main() {
